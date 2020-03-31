@@ -54,4 +54,4 @@ fi
 add_sources
 install_requirements
 copy_config
-restart services
+restart_services

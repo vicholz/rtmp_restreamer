@@ -10,6 +10,6 @@ PPP_RESTART=0
 # more simultaneous client connections), set RLIMITS="-n 4096"
 # More than one resource limit may be modified at the same time,
 # e.g. RLIMITS="-n 4096 -d unlimited"
-RLIMITS="-n 4096 -d unlimited"
+RLIMITS="-n 4096"
 
 ENABLE=1
