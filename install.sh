@@ -21,6 +21,8 @@ function install_requirements {
     libnginx-mod-stream \
     libnginx-mod-rtmp \
     stunnel4
+    sudo systemctl enable nginx.service
+    sudo systemctl enable stunnel4.service
 }
 
 function copy_config {
