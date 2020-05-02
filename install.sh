@@ -21,8 +21,9 @@ function install_requirements {
     libnginx-mod-stream \
     libnginx-mod-rtmp \
     stunnel4
-    sudo systemctl enable nginx.service
-    sudo systemctl enable stunnel4.service
+    sudo systemctl enable nginx.service # make sure nginx is enabled
+    sudo systemctl enable stunnel4.service # make sure stunnel4 is enabled
+    systemctl enable systemd-networkd-wait-online.service # makes sure we have an IP before starting network dependant services
 }
 
 function copy_config {
