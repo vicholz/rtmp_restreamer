@@ -58,3 +58,5 @@ add_sources
 install_requirements
 copy_config
 restart_services
+
+echo "Done!"
