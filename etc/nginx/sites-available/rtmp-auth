@@ -4,8 +4,8 @@
 
 # simple passphrase authentication (add '?psk=MY_SECRET_PASSPHRASE' to the end of the URL)
 server {
-	allow 192.168.1.0/24;
 	deny all;
+	allow 192.168.1.0/24;
 	listen 9999;
 	location /auth {
 		if ($arg_psk = 'MY_SECRET_PASSPHRASE') {
